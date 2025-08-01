@@ -104,7 +104,6 @@ function Home() {
               >
                 <CardMedia
                   component="img"
-                  height="300"
                   image={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   sx={{ borderRadius: "10px" }}
                 />

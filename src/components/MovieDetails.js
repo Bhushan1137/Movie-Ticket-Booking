@@ -39,7 +39,7 @@ function MovieDetails() {
         );
         const data = await response.json();
 
-        console.log("API Response:", data);
+        // console.log("API Response:", data);
 
         if (!data || data.success === false) {
           throw new Error("Movie data not found");
@@ -147,7 +147,7 @@ function MovieDetails() {
                 variant="contained"
                 color="primary"
                 sx={{ mr: 2 }}
-                onClick={() => navigate(`/seat-selection/${id}`)}
+                onClick={() => navigate(`/select-date-time/${id}`)}
               >
                 🎟 Book Ticket
               </Button>
