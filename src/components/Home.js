@@ -13,8 +13,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { MoonLoader } from "react-spinners"; 
 
-const API_KEY = "0fcca2e2fe45bcbd5968ebfe0d897505";
-const BASE_URL = "https://api.themoviedb.org/3/movie";
+const API_KEY = process.env.REACT_APP_MOVIE_API_KEY;
+const BASE_URL = process.env.REACT_APP_MOVIE_BASE_URL;
 
 const categories = [
   { label: "Popular", endpoint: "popular" },
@@ -50,13 +50,11 @@ function Home() {
     fetchMovies();
   }, [fetchMovies]);
 
-  // Reset movie list when category changes
   useEffect(() => {
     setMovies([]);
     setPage(1);
   }, [selectedCategory]);
 
-  // Infinite scroll logic
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting && !loading) {
@@ -70,7 +68,7 @@ function Home() {
   }, [loading]);
 
   return (
-    <Box sx={{ minHeight: "100vh", backgroundColor: "#f5f5f5", pb: 5 }}>
+    <Box sx={{ minHeight: "100vh", pb: 5 }}>
       <Container sx={{ pt: 4 }}>
         <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}>
           🎬 Browse Movies
@@ -94,9 +92,10 @@ function Home() {
               <Card
                 sx={{
                   cursor: "pointer",
-                  padding: 2,
-                  borderRadius: "15px",
-                  backgroundColor: "#fff",
+                    padding: 1,
+                    borderRadius: "15px",
+                    backgroundColor: "rgba(114, 109, 109, 0.47)",
+                    boxShadow:"0px 10px 20px rgba(114, 109, 109, 0.47) ",
                   transition: "transform 0.2s",
                   "&:hover": { transform: "scale(1.05)" },
                 }}
