@@ -7,6 +7,7 @@ import MovieDetails from "./components/MovieDetails";
 import SearchResults from "./components/SearchResults";
 import SeatSelection from "./components/SeatSelection"; // ✅ Import Seat Selection
 import Navbar from "./components/Navbar";
+import DateTimeSelection from "./components/DateTimeSelection";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
         <Route path="/search" element={<SearchResults />} />
-        <Route path="/seat-selection/:id" element={<SeatSelection />} /> {/* ✅ Add missing route */}
+        <Route path="/seat-selection/:id" element={<SeatSelection />} /> 
+        <Route path="/select-date-time/:id" element={<DateTimeSelection />} />
       </Routes>
     </Router>
   );
