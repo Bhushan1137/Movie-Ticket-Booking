@@ -54,9 +54,17 @@ function Register() {
   };
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" >
       <Box
-        sx={{ mt: 4, p: 3, boxShadow: 3, borderRadius: 2, textAlign: "center" }}
+        sx={{
+          mt: 4,
+          p: 3,
+          borderRadius: 2,
+          textAlign: "center",
+          borderRadius: "15px",
+          backgroundColor: "rgba(255, 255, 255, 0.26)",
+          boxShadow: "0 10px 20px rgba(204, 199, 199, 0.47) ",
+        }}
       >
         <Typography variant="h5">Register</Typography>
         <Formik

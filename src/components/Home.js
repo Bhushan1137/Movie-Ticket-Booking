@@ -94,8 +94,8 @@ function Home() {
                   cursor: "pointer",
                     padding: 1,
                     borderRadius: "15px",
-                    backgroundColor: "rgba(114, 109, 109, 0.47)",
-                    boxShadow:"0px 10px 20px rgba(114, 109, 109, 0.47) ",
+                    backgroundColor: "rgba(40, 40, 40, 0.31)",
+                    boxShadow:"0px 10px 20px rgba(59, 59, 59, 0.91) ",
                   transition: "transform 0.2s",
                   "&:hover": { transform: "scale(1.05)" },
                 }}
