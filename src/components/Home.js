@@ -13,8 +13,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { MoonLoader } from "react-spinners"; 
 
-const API_KEY = process.env.REACT_APP_MOVIE_API_KEY;
-const BASE_URL = process.env.REACT_APP_MOVIE_BASE_URL;
+const API_KEY = '0fcca2e2fe45bcbd5968ebfe0d897505';
+const BASE_URL = `https://api.themoviedb.org/3/movie`;
 
 const categories = [
   { label: "Popular", endpoint: "popular" },
@@ -86,7 +86,7 @@ function Home() {
           ))}
         </Select>
 
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
           {movies.map((movie) => (
             <Grid item key={movie.id} xs={12} sm={6} md={4} lg={3}>
               <Card

@@ -19,7 +19,6 @@ const SEAT_ROWS = 10;
 const SEAT_COLS = 10;
 const TICKET_PRICE = 200;
 
-// Example: hide rows C and H (alphabetically). Provide from props or state.
 const HIDDEN_ROWS = ['C', 'H'];
 
 const getCategory = rowIndex => {
@@ -30,8 +29,8 @@ const getCategory = rowIndex => {
 
 const getSeatIcon = category => {
   switch (category) {
-    case 'silver': return <ChairIcon fontSize="small" />;
-    case 'gold': return <EventSeatIcon fontSize="small" />;
+    case 'silver': return <EventSeatIcon fontSize="small" />;
+    case 'gold': return <ChairIcon fontSize="small" />;
     case 'premium': return <WeekendIcon fontSize="small" />;
     default: return <ChairIcon fontSize="small" />;
   }
@@ -101,7 +100,7 @@ function SeatSelection() {
         <Typography variant="h6" gutterBottom>Select Your Seats</Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mt: 2 }}>
           {[...Array(SEAT_ROWS)].map((_, ri) => {
-            const rowLetter = String.fromCharCode(65 + ri); // 'A', 'B', ...
+            const rowLetter = String.fromCharCode(65 + ri); 
             if (HIDDEN_ROWS.includes(rowLetter)) {
               return null;
             }
@@ -138,7 +137,6 @@ function SeatSelection() {
               </Box>
             );
           })}
-          {/* Column numbers at bottom */}
           <Box sx={{ display: 'flex', justifyContent: 'center', mt: 1 }}>
             <Typography variant="body2" sx={{ width: 20 }}> </Typography>
             {[...Array(SEAT_COLS)].map((_, ci) => (
