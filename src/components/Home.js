@@ -36,7 +36,7 @@ function Home() {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://cors-anywhere.herokuapp.com/${BASE_URL}/${selectedCategory}?api_key=${API_KEY}&page=${page}`
+        `${BASE_URL}/${selectedCategory}?api_key=${API_KEY}&page=${page}`
       );
       const data = await response.json();
       setMovies((prev) => [...prev, ...(data.results || [])]);
