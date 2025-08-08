@@ -5,7 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Home from "./components/Home";
 import MovieDetails from "./components/MovieDetails";
 import SearchResults from "./components/SearchResults";
-import SeatSelection from "./components/SeatSelection"; // ✅ Import Seat Selection
+import SeatSelection from "./components/SeatSelection"; 
 import Navbar from "./components/Navbar";
 import DateTimeSelection from "./components/DateTimeSelection";
 

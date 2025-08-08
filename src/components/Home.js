@@ -86,7 +86,7 @@ function Home() {
           ))}
         </Select>
 
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
           {movies.map((movie) => (
             <Grid item key={movie.id} xs={12} sm={6} md={4} lg={3}>
               <Card
