@@ -31,7 +31,6 @@ function Home() {
   const observerRef = useRef(null);
   const navigate = useNavigate();
 
-  // Fetch movies from the API
   const fetchMovies = useCallback(async () => {
     setLoading(true);
     try {

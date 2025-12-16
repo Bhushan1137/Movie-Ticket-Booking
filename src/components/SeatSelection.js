@@ -29,7 +29,7 @@ const getCategory = rowIndex => {
 
 const getSeatIcon = category => {
   switch (category) {
-    case 'silver': return <EventSeatIcon fontSize="small" />;
+    case 'silver': return <EventSeatIcon fontSize="small"  />;
     case 'gold': return <ChairIcon fontSize="small" />;
     case 'premium': return <WeekendIcon fontSize="small" />;
     default: return <ChairIcon fontSize="small" />;
@@ -97,6 +97,7 @@ function SeatSelection() {
         </Typography>
         <Divider sx={{ my: 2 }} />
 
+        <Typography variant="h6" sx={{ width: '50%', backgroundColor:'grey', marginX: 'auto'}} gutterBottom>Screen</Typography>
         <Typography variant="h6" gutterBottom>Select Your Seats</Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mt: 2 }}>
           {[...Array(SEAT_ROWS)].map((_, ri) => {
