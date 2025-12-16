@@ -12,6 +12,8 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.11.0",
+    "caniuse-lite": "^1.0.30001743",
     "dayjs": "^1.11.13",
     "firebase": "^11.3.1",
     "formik": "^2.4.6",

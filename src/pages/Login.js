@@ -11,7 +11,7 @@ import {
   Box,
   Link,
 } from "@mui/material";
-import backgroundImage from "../assets/login.jpg"; // 👈 import the same image
+import backgroundImage from "../assets/login.jpg";
 
 const validationSchema = Yup.object({
   email: Yup.string().email("Invalid email format").required("Email is required"),
@@ -51,9 +51,9 @@ function Login() {
             p: 4,
             borderRadius: "15px",
             textAlign: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.6)",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.6)",
-            backdropFilter: "blur(6px)",
+            backgroundColor: "rgba(255, 255, 255, 0.04)",
+            boxShadow: "0 10px 30px rgba(255, 255, 255, 0.6)",
+            backdropFilter: "blur(4px)",
             color: "#fff",
           }}
         >

@@ -77,8 +77,8 @@ function Register() {
             p: 4,
             borderRadius: "15px",
             textAlign: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.6)",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.6)",
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+            boxShadow: "0 10px 30px rgba(255, 255, 255, 0.6)",
             backdropFilter: "blur(6px)",
             color: "#fff",
           }}
